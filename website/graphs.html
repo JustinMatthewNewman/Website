@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> WebDev Club </title>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="img/js.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://www.chartjs.org/dist/2.6.0/Chart.bundle.js"></script>
+  <script src='https://cdn.plot.ly/plotly-2.9.0.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+  <script src="https://www.chartjs.org/samples/2.6.0/utils.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<!-- Links to other pages -->
+
+<body>
+  <nav>
+    <div class="logo"> WebDev Club </div>
+    <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./join.html">Join</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="./graphs.html">Graphs</a></li>
+    </ul>
+    <div class="icon">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+
+  <!-- Project Section -->
+  <div class="team-container">
+    <h1>JavaScript Data Visualization</h1>
+    <div class="row" style="margin-top:64px">
+      <div class="imgHover">
+        <div class="cardcol">
+          <div class="card">
+            <div>
+              <canvas id="chart1"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="imgHover">
+        <div class="cardcol">
+          <div class="card">
+            <div>
+              <canvas id="chart2"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="imgHover">
+        <div class="cardcol">
+          <div class="card">
+            <div>
+              <canvas id="scatter"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="imgHover">
+        <div class="cardcol">
+          <div class="card">
+            <div>
+              <canvas id="chart4"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="row" style="margin-top:64px">
+    <div class="imgHover">
+      <div class="cardcol">
+        <div class="card">
+          <div>
+            <canvas id="chart3"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="imgHover">
+      <div class="cardcol">
+        <div class="card">
+          <div class="wrapper" style="max-width: 512px; margin: auto">
+            <canvas id="chart-0"></canvas>
+          </div>
+          <div class="toolbar">
+            <button onclick="togglePropagate(this)">Propagate</button>
+            <button onclick="toggleSmooth(this)">Smooth</button>
+          </div>
+          <div id="chart-analyser" class="analyser"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="imgHover">
+      <div class="cardcol">
+        <div class="card">
+          <div class="wrapper" style="max-width: 512px; margin: auto">
+            <canvas id="chart10"></canvas>
+          </div>
+          <div class="toolbar">
+            <button onclick="togglePropagate(this)">Propagate</button>
+            <button onclick="toggleSmooth(this)">Smooth</button>
+          </div>
+          <div id="chart-analyser" class="analyser"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="imgHover">
+      <div class="cardcol">
+        <div class="card">
+          <div>
+            <canvas id="chart-area"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+  </div>
+
+
+  <div class="gBox">
+    <br><br>
+    <button id="randomizeData"><h2>Randomize 2D Data</h2></button>
+    <br><br><br><br><br><br>
+    <h1>3D JavaScript Data Visualization</h1>
+<div id='myDiv2'><!-- Plotly chart will be drawn inside this DIV --></div>
+  </div>
+
+  <!-- Project Section -->
+  <div class="team-container">
+    <h1>R Data Visualization</h1>
+    <div class="row" style="margin-top:64px">
+      <div class="imgHover">
+        <div class="cardcol">
+          <div class="card">
+            <a href="hw/HW1.html"><img src="img/hw1.jpg"
+                alt="John" style="width:100%"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="imgHover">
+        <div class="cardcol">
+          <div class="card">
+            <a href="hw/HW2.html"><img src="img/hw2.jpg"
+                alt="Jane" style="width:100%"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="imgHover">
+        <div class="cardcol">
+          <div class="card">
+            <a href="hw/HW3.html"><img src="img/hw3.jpg" alt="Jane"
+                style="width:100%"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="imgHover">
+        <div class="cardcol">
+          <div class="card">
+            <a href="hw/HW4.html"><img src="img/hw4.jpg"
+                alt="Jane" style="width:100%"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="imgHover">
+        <div class="cardcol">
+          <div class="card">
+            <a href="hw/HW5.html"><img src="img/hw5.jpg"
+                alt="Jane" style="width:100%"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="imgHover">
+        <div class="cardcol">
+          <div class="card">
+            <a href=""><img src="img/cs.jpg"
+                alt="Jane" style="width:100%"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="imgHover">
+        <div class="cardcol">
+          <div class="card">
+            <a href=""><img src="img/cs.jpg" alt="Mike" style="width:100%"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="imgHover">
+        <div class="cardcol">
+          <div class="card">
+            <a href=""><img src="img/cs.jpg" alt="Dan"
+                style="width:100%"></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/api_docs/mt_bruno_elevation.csv', function(err, rows){
+function unpack(rows, key) {
+  return rows.map(function(row) { return row[key]; });
+}
+
+var z_data=[ ]
+for(i=0;i<24;i++)
+{
+  z_data.push(unpack(rows,i));
+}
+
+var data = [{
+           z: z_data,
+           type: 'surface'
+        }];
+
+var layout = {
+  title: 'Mt Bruno Elevation',
+  autosize: false,
+  width: 500,
+  height: 500,
+  margin: {
+    l: 65,
+    r: 50,
+    b: 65,
+    t: 90,
+  }
+};
+Plotly.newPlot('myDiv', data, layout);
+});
+
+d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/3d-scatter.csv', function(err, rows){
+function unpack(rows, key) {
+	return rows.map(function(row)
+	{ return row[key]; });}
+
+var trace1 = {
+	x:unpack(rows, 'x1'), y: unpack(rows, 'y1'), z: unpack(rows, 'z1'),
+	mode: 'markers',
+	marker: {
+		size: 12,
+		line: {
+		color: 'rgba(217, 217, 217, 0.14)',
+		width: 0.5},
+		opacity: 0.8},
+	type: 'scatter3d'
+};
+
+var trace2 = {
+	x:unpack(rows, 'x2'), y: unpack(rows, 'y2'), z: unpack(rows, 'z2'),
+	mode: 'markers',
+	marker: {
+		color: 'rgb(127, 127, 127)',
+		size: 12,
+		symbol: 'circle',
+		line: {
+		color: 'rgb(204, 204, 204)',
+		width: 1},
+		opacity: 0.8},
+	type: 'scatter3d'};
+
+var data = [trace1, trace2];
+var layout = {margin: {
+	l: 0,
+	r: 0,
+	b: 0,
+	t: 0
+  }};
+Plotly.newPlot('myDiv2', data, layout);
+});
+
+  </script>
+
+  <script src="js/app.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="particles.js"></script>
+
+</body>
+
+</html>
